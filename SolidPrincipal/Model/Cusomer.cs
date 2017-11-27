@@ -6,10 +6,20 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-   public class Cusomer
+
+   
+    public class Cusomer:IDiscount,IDatabase
     {
+
+        public Cusomer(ILogger i)
+        {
+
+            obj = i;
+
+        }
+
         //So SRP says that a class should have only one responsibility and not multiple.
-        private FileLogger obj = new FileLogger();
+        private ILogger obj;
 
         public virtual void Add()
         {
@@ -19,8 +29,15 @@ namespace Model
             }
             catch (Exception ex)
             {
-                obj.Handle(ex.ToString());
+                obj.Handle(ex.Message.ToString());
             }
         }
+
+        public virtual double GetDiscount(double TotalSales)
+        {
+            return TotalSales;
+        }
     }
+
+
 }

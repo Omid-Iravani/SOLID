@@ -43,7 +43,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\Cusomer.cs" />
+    <Compile Include="Model\CustomerwithRead.cs" />
+    <Compile Include="Model\EmailLogger.cs" />
+    <Compile Include="Model\Enquiry.cs" />
+    <Compile Include="Model\EverViewerLogger.cs" />
     <Compile Include="Model\FileLogger.cs" />
+    <Compile Include="Model\GoldCustomer.cs" />
+    <Compile Include="Model\IDatabase.cs" />
+    <Compile Include="Model\IDatabaseV1.cs" />
+    <Compile Include="Model\IDiscount.cs" />
+    <Compile Include="Model\ILogger.cs" />
+    <Compile Include="Model\SilverCustomer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

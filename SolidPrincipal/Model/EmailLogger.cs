@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    public  class FileLogger:ILogger
+    public class EmailLogger : ILogger
     {
         public void Handle(string error)
         {
-            System.IO.File.WriteAllText(@"Error.txt", error);
+            throw new NotImplementedException();
         }
     }
 }

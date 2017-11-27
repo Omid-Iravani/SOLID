@@ -23,8 +23,6 @@ namespace SolidPrincipal
                 item.Add();
             }
 
-
-
         }
     }
 }
